@@ -154,3 +154,68 @@
     height: 385px;
     border-radius: 10px;
 }
+
+
+/* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+    .assessment-container {
+        padding: 30px;
+    }
+    .assessment-card {
+        padding: 15px;
+    }
+    .assessment-card h2 {
+        font-size: 20px;
+    }
+    .assessment-card p {
+        font-size: 14px;
+    }
+    .company-footer img {
+        width: 80px;
+    }
+    .assessment-image img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .assessment-card,
+    .assessment-image {
+        max-width: 100%;
+    }
+    .assessment-card {
+        margin-bottom: 20px;
+    }
+    .assessment-image img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .assessment-container {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 12px;
+    }
+    .arrow {
+        font-size: 20px;
+    }
+    .assessment-card h2 {
+        font-size: 18px;
+    }
+    .assessment-card p {
+        font-size: 12px;
+    }
+    .company-footer img {
+        width: 60px;
+    }
+    .assessment-image img {
+        height: auto;
+    }
+}

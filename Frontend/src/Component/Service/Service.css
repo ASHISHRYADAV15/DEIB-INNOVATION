@@ -122,5 +122,174 @@
 }
 
 .picture-img {
-    margin-left: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.picture-img img {
+    max-width: 80%;
+    /* Adjust the percentage to reduce/increase size */
+    height: auto;
+    display: inline-block;
+}
+
+
+/* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+    .dei-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-left: 50px;
+    }
+    .dei-content {
+        margin: auto;
+        text-align: center;
+    }
+    .dei-heading {
+        font-size: 48px;
+    }
+    .dei-highlight {
+        font-size: 60px;
+    }
+    .dei-description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    .image1 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .deib-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-right: 50px;
+    }
+    .deib-content {
+        margin: auto;
+        text-align: center;
+    }
+    .deib-title {
+        font-size: 20px;
+    }
+    .deib-description {
+        font-size: 14px;
+    }
+    .deib-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .next-container {
+        padding: 60px 20px;
+    }
+    .next-title {
+        font-size: 28px;
+    }
+    .next-text {
+        font-size: 16px;
+    }
+    .picture-img {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .dei-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dei-heading {
+        font-size: 36px;
+    }
+    .dei-highlight {
+        font-size: 48px;
+    }
+    .dei-description {
+        font-size: 14px;
+    }
+    .image1 {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .deib-container {
+        padding-right: 20px;
+    }
+    .deib-title {
+        font-size: 18px;
+    }
+    .deib-description {
+        font-size: 14px;
+    }
+    .deib-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .next-container {
+        padding: 40px 20px;
+    }
+    .next-title {
+        font-size: 24px;
+    }
+    .next-text {
+        font-size: 16px;
+    }
+    .picture-img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .dei-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+    }
+    .dei-heading {
+        font-size: 28px;
+    }
+    .dei-highlight {
+        font-size: 36px;
+    }
+    .dei-description {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .image1 {
+        width: 100%;
+    }
+    .deib-container {
+        padding-right: 10px;
+        height: auto;
+    }
+    .deib-title {
+        font-size: 16px;
+    }
+    .deib-description {
+        font-size: 12px;
+    }
+    .deib-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .next-container {
+        padding: 30px 10px;
+    }
+    .next-title {
+        font-size: 20px;
+    }
+    .next-text {
+        font-size: 14px;
+    }
+    .picture-img {
+        margin-left: 0;
+        text-align: center;
+    }
 }
