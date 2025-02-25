@@ -1,0 +1,51 @@
+/* TeamSection.css */
+
+.team-container8 {
+    margin-left: 200px;
+    text-align: left;
+    padding: 40px;
+}
+
+.team-heading8 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.team-highlight8 {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #87ceeb;
+    text-decoration-thickness: 3px;
+}
+
+.team-gallery8 {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.team-card8 {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-img8 {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.team-highlight-img8 {
+    position: relative;
+}
+
+.sun-icon8 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}

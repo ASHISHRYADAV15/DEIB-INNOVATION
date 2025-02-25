@@ -1,0 +1,50 @@
+.resources-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.resources-text {
+    padding-left: 240px;
+    font-size: 60px;
+    font-weight: 50;
+    color: black;
+}
+
+.italic-text {
+    font-family: Crusellia, serif;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: lightblue;
+}
+
+.button-group {
+    display: flex;
+    gap: 16px;
+    margin-right: 220px;
+}
+
+.resource-button {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 9999px;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+}
+
+.resource-button:hover {
+    background: black;
+    color: white;
+}

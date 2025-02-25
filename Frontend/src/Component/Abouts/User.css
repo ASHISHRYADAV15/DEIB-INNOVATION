@@ -1,0 +1,139 @@
+.team-container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Keeps 3 members per row */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile-image {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.member-role {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.expand-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Keep X button in place */
+
+.expand-button:focus,
+.expand-button:active {
+    outline: none;
+}
+
+
+/* Details Section */
+
+.details-container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Align Connect Section Left */
+
+.details-left {
+    width: 30%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Connect Heading */
+
+.connect-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Social Icons Below Connect */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    /* Stacked vertically */
+    gap: 5px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Align Content to the Right */
+
+.details-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+/* Text Styling */
+
+.details-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* Question-Answer Section */
+
+.question-answer {
+    margin-top: 10px;
+}
+
+
+/* Emoji Icons */
+
+.emoji {
+    font-size: 18px;
+    margin-right: 5px;
+}

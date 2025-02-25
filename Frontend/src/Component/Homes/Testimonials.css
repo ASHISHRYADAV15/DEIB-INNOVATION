@@ -1,0 +1,133 @@
+/* General Section Styling */
+
+.testimonials-section {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.divider-testimonials {
+    border-top: 1px solid black;
+    width: 80%;
+    /* Adjust width as needed */
+    margin: 10px auto;
+    /* Centers the line */
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.title {
+    margin-left: 10%;
+    font-size: 16px;
+    /* Slightly larger for better readability */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.arrows {
+    margin-right: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Carousel Container */
+
+.carousel {
+    margin-top: 100px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: white;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Testimonial Card */
+
+.testimonial-card {
+    flex: 0 0 400px;
+    /* Increased size for better visibility */
+    padding: 30px;
+    /* More padding for better layout */
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white !important;
+    border-radius: 0px !important;
+    margin-bottom: 400px;
+    height: 300px;
+}
+
+.testimonial-card:first-child {
+    border-left: none;
+    /* Remove border for the first card */
+}
+
+.testimonial-text {
+    font-size: 20px;
+    /* Larger font size for emphasis */
+    font-weight: bold;
+    /* Make text bold */
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    /* Slightly larger font */
+    color: #333;
+}
+
+.user-title {
+    font-size: 14px;
+    /* Adjusted for consistency */
+    color: #777;
+}
+
+.company-logo {
+    width: 60px;
+    object-fit: contain;
+    height: 100%;
+}
