@@ -51,7 +51,7 @@ const Header = () => {
       {/* Logo */}
       <div className="nav-logo">
         <img src="/images/dddd.jpeg"  alt="Logo" />
-        <span>DEIB Innovation Lab</span>
+        <span>DEIB Innovation</span>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -65,6 +65,7 @@ const Header = () => {
       <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
         {/* <li><Link to="/service">Service</Link></li> */}
+        <li><Link to="/about-us">About us</Link></li>
         <li className="nav-dropdown">
           <a href="/Service">Services</a>
           <div className="nav-dropdown-menu">
@@ -72,10 +73,9 @@ const Header = () => {
             <Link to="/traning">Traning</Link>
           </div>
         </li>
-        <li><Link to="/resources">Resources</Link></li>
-        <li><Link to="/about-us">About us</Link></li>
-        <li><Link to="/career">Careers</Link></li>
         <li><Link to="/impact">Impact</Link></li>
+        <li><Link to="/career">Careers</Link></li>
+        <li><Link to="/resources">Resources</Link></li>
       </ul>
 
       {/* Contact Button */}

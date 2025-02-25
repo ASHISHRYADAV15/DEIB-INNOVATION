@@ -8,19 +8,19 @@
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    padding: 20px;
-    margin-top: 180px;
+    padding: 40px 20px;
+    margin-top: 120px;
 }
 
 
 /* Heading Section */
 
 .heading-section h1 {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2.8rem;
+    font-weight: 400;
     line-height: 1.4;
-    margin-bottom: 10px;
-    width: 100%;
+    margin-bottom: 12px;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -46,7 +46,7 @@
     font-size: 1.2rem;
     color: #555;
     margin-top: 10px;
-    width: 100%;
+    max-width: 85%;
 }
 
 
@@ -54,20 +54,22 @@
 
 .button-section {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .partner-btn,
 .services-btn {
-    padding: 15px 24px;
+    padding: 14px 22px;
     border-radius: 35px;
     font-size: 1rem;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease;
+    min-width: 200px;
 }
 
 .partner-btn {
@@ -104,14 +106,14 @@
 
 .logo-slider {
     display: flex;
-    gap: 40px;
-    animation: scroll 30s linear infinite;
+    gap: 30px;
+    animation: scroll 20s linear infinite;
     width: max-content;
 }
 
 .logo-item img {
-    max-width: 120px;
-    max-height: 80px;
+    max-width: 110px;
+    max-height: 70px;
     object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -119,24 +121,6 @@
 .logo-item img:hover {
     transform: scale(1.1);
     opacity: 0.8;
-}
-
-.sky-img-container {
-    width: 100%;
-    /* Ensures it takes full width */
-    height: 500px;
-    /* Adjust the height as needed */
-    overflow: hidden;
-    /* Prevents overflow */
-}
-
-.sky-images {
-    width: 100%;
-    /* Keeps the width responsive */
-    height: 100%;
-    /* Ensures it fits inside the container */
-    object-fit: cover;
-    /* Ensures the image maintains aspect ratio */
 }
 
 
@@ -152,14 +136,29 @@
 }
 
 
+/* Image Container */
+
+.sky-img-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sky-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* Responsive Design */
 
 @media (max-width: 1024px) {
     .heading-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
-    .button-section {
-        gap: 15px;
+    .subheading {
+        font-size: 1.1rem;
     }
 }
 
@@ -167,20 +166,27 @@
     .heading-section h1 {
         font-size: 2rem;
     }
+    .subheading {
+        font-size: 1rem;
+        max-width: 90%;
+    }
     .button-section {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+    }
+    .partner-btn,
+    .services-btn {
+        width: 90%;
     }
     .logo-slider {
-        animation: scroll 40s linear infinite;
-        /* Slower on smaller screens */
+        animation: scroll 30s linear infinite;
     }
 }
 
 @media (max-width: 480px) {
     .home-container {
-        padding: 15px;
-        margin-top: 120px;
+        padding: 20px;
+        margin-top: 100px;
     }
     .heading-section h1 {
         font-size: 1.8rem;
@@ -189,7 +195,10 @@
         font-size: 1rem;
     }
     .logo-item img {
-        max-width: 90px;
-        max-height: 60px;
+        max-width: 80px;
+        max-height: 50px;
+    }
+    .sky-img-container {
+        height: 300px;
     }
 }
