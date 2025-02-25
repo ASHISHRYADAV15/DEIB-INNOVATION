@@ -1,3 +1,5 @@
+/* General Container */
+
 .approach-container1 {
     text-align: center;
     padding: 50px;
@@ -6,14 +8,19 @@
     margin-right: 15%;
 }
 
+
+/* Title */
+
 .approach-title1 {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    /* margin-bottom: 30px; */
     text-align: left;
 }
+
+
+/* Content Layout */
 
 .approach-content1 {
     display: flex;
@@ -23,10 +30,16 @@
     flex-wrap: wrap;
 }
 
+
+/* Individual Items */
+
 .approach-item1 {
     width: 30%;
     text-align: center;
 }
+
+
+/* Images */
 
 .approach-image1 {
     width: 100%;
@@ -37,8 +50,10 @@
 
 .small-image1 {
     max-width: 150px;
-    /* Adjust the size of the images */
 }
+
+
+/* Text Styling */
 
 .approach-item1 h3 {
     font-size: 22px;
@@ -51,6 +66,66 @@
     line-height: 1.5;
 }
 
+
+/* Adjust Image Position */
+
 .image-no-3 {
     margin-top: 140px;
+}
+
+
+/* 🔹 Responsive Adjustments */
+
+@media (max-width: 1024px) {
+    .approach-container1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 40px;
+    }
+    .approach-content1 {
+        gap: 30px;
+    }
+    .approach-item1 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-container1 {
+        padding: 30px;
+    }
+    .approach-title1 {
+        text-align: center;
+        font-size: 16px;
+    }
+    .approach-content1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .approach-item1 {
+        width: 80%;
+    }
+    .image-no-3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .approach-container1 {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 20px;
+    }
+    .approach-title1 {
+        font-size: 14px;
+    }
+    .approach-item1 {
+        width: 100%;
+    }
+    .approach-item1 h3 {
+        font-size: 20px;
+    }
+    .approach-item1 p {
+        font-size: 14px;
+    }
 }
